@@ -1,0 +1,44 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: scale 200ms;
+}
+
+.gallery-image:hover {
+  scale: 1.05 1.05;
+  cursor: pointer;
+}
+
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.modal-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.basicLightbox p {
+  margin: 0, auto;
+  color: rgba(200, 200, 200, 0.75);
+  text-align: center;
+  pointer-events: none;
+}
